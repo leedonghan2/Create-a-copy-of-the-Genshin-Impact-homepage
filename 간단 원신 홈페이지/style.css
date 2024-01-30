@@ -1,0 +1,508 @@
+
+
+body{
+    margin: 0;
+
+
+
+}
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(5, 5, 5, 0.7);
+    padding: 5px 8px;
+    height: 60px;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.song{
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom:20px;
+}
+
+
+.list{
+    list-style: none;
+    padding-left: 0;
+    padding-right: 370px;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(192, 198, 199);
+}
+.list i{
+    font-size: 10px;
+    padding-left: 5px;
+}
+.list li{
+    padding: 8px 10px;
+    animation: bar;
+}
+
+.list li:hover{
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+    color: white;
+    border-top: 5px solid skyblue;
+}
+
+.login{
+    list-style: none;
+    display: flex;    
+    align-items:center;
+    justify-content: end;
+    justify-items: end;
+}
+.login a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(192, 198, 199);
+    padding-top:18px;
+    padding: 8px 10px;
+}
+.button{
+    background-color: rgb(246, 207, 11);
+    border: none;
+    width: 198px;
+    height: 70px;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+
+
+
+
+.main_title{
+    text-align: center;
+    padding-top: 400px;
+    padding-left: 52px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px #f4ad49
+}
+.content{
+    padding-left: 400px;
+    padding-bottom: 80px;
+}
+.content_QR{
+    float: left;
+    height: 157px;
+    padding-right: 18px;
+}
+.up{
+    height: 65px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+
+}
+.down{
+    height: 65px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    padding-left: 340px;
+    color: black;
+    position: absolute;
+    animation:upDown 1s ease-in-out infinite;
+    
+}
+@keyframes upDown{
+    0%{
+        bottom: 1rem;
+        color: rgb(0, 0, 0);
+        opacity: 1;
+    }
+    50%{
+        bottom: 1.4rem;
+        color:rgb(97, 96, 96) ;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 1rem;;
+        color: black;
+    }
+}
+
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.news-section{
+    border: 2px solid black;
+    background-color: black;
+    border-left-width: 0;
+    border-right-width: 0;
+    height: 140vh;
+    background-image: url(img/몬드\ 술집.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+
+}
+.news{
+    background-color: rgba(67, 67, 55, 0.7);
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+/*소식 CSS */
+.news_title{
+    font-size: 50px;
+    padding-top: 90px;
+    text-align: center;
+    color: white;
+}
+/*소식 이미지 CSS */
+.news_img{
+    display: flex;
+    float: left;
+    width: 50%;
+    background-image: url(img/원신_로고.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*소식 글 CSS */
+.news_article{
+    margin-top: 50px;
+    display: flex;
+    float: right;
+    width: 50%;
+    flex-direction: column;
+    text-align:left;
+}
+.news_subtitle{
+    width: 40px;
+    list-style: none;
+    padding-left: 50px;
+    font-size: 20px;
+    color: #ffd000;
+    font-weight: bold;
+}
+.news_list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+.news_list li:hover{
+    background-color: rgba(102, 102, 96, 0.9);
+}
+.news_list li{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    padding-top: 10px;
+}
+.news_list p{
+    float: right;
+}
+
+
+.informa{
+    height: 170vh
+}
+.big_box{
+    border: 1px solid black;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 30px;
+    color: white;
+}
+.Mond {
+
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(city/몬드.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.Mond:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 800px;
+    width: 100%;
+    height: 100%;
+    background-image: url('character/진.png'); /* 호버 시 추가적으로 보여줄 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: 600px;
+    z-index: -1; /* 기존 이미지 뒤로 이동 */
+}
+
+.Mond:hover {
+    transform: scale(1.1); /* 가로와 세로의 비율을 유지하며 확대 */
+    border: 4px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+}
+
+.Liyue{    
+
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background-image: url(city/리월.webp);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.Liyue:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 800px;
+    width: 100%;
+    height: 100%;
+    background-image: url('character/소.png'); /* 호버 시 추가적으로 보여줄 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: 600px;
+    z-index: -1; /* 기존 이미지 뒤로 이동 */
+}
+
+.Liyue:hover {
+    transform: scale(1.1); /* 가로와 세로의 비율을 유지하며 확대 */
+    border: 4px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+}
+.Inazuma{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background-image: url(city/이나즈마.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    transition: transform 0.5s ease;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.Inazuma:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 800px;
+    width: 100%;
+    height: 100%;
+    background-image: url('character/아야카.png'); /* 호버 시 추가적으로 보여줄 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: 600px;
+    z-index: -1; /* 기존 이미지 뒤로 이동 */
+}
+.Inazuma:hover{
+    transform: scale(1.1); /* 가로와 세로의 비율을 유지하며 확대 */
+    border: 4px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+}
+.Sumeru{    
+
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background-image: url(city/수메르.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    transition: transform 0.5s ease;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.Sumeru:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 750px;
+    width: 100%;
+    height: 100%;
+    background-image: url('character/타이나리.png'); /* 호버 시 추가적으로 보여줄 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: 700px;
+    z-index: -1; /* 기존 이미지 뒤로 이동 */
+}
+.Sumeru:hover{
+    transform: scale(1.1); /* 가로와 세로의 비율을 유지하며 확대 */
+    border: 4px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+}
+.Fontaine{    
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background-image: url(city/폰타인.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    transition: transform 0.5s ease;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.Fontaine:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 700px;
+    width: 100%;
+    height: 100%;
+    background-image: url('character/리니.png'); /* 호버 시 추가적으로 보여줄 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: 700px;
+    z-index: -1; /* 기존 이미지 뒤로 이동 */
+}
+.Fontaine:hover{
+    transform: scale(1.1); /* 가로와 세로의 비율을 유지하며 확대 */
+    border: 4px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+}
+
+.footer{
+    border: 1px solid black;
+    background-color:  rgb(164, 161, 161);
+    height: 120vh;
+}
+.icon_banner{
+    margin-top: 5px;
+
+    background-color: rgb(164, 161, 161);
+    width: 100%;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    list-style: none;
+    font-size: 30px;
+}
+.frame{
+    border: 1px solid black;
+    height: 50vh;
+    display: flex;
+    justify-content:space-around;
+    
+}
+.writing{
+    display: flex;
+    flex-direction: column;
+}
+.writing p{
+    margin-top: 100px;
+}
+
+#email{
+    border-radius: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 110px;
+    height: 30px;
+    width: 400px;
+    background-color: rgb(76, 76, 76);
+    color: rgb(172, 168, 168);
+    font-weight: bold;
+}  
+#button{
+    border-radius: 14px;
+    height: 50px;
+    background: none;
+    background-color: rgb(227, 227, 176);
+    font-size: 20px;
+}
+.checkbox :first-child{
+    list-style: none;
+    font-size: 13px;
+    color: white;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 90vh;
+    padding-top:50px;
+}
+.footer_button{
+    list-style: none;
+    display: flex;
+}
+.footer_button li{
+    padding-left: 10px;
+    color: grey;
+    padding-top: 10px;
+}
+.footer_button li:hover{
+    text-shadow: 0 0 10px rgb(255, 255, 255, 6);
+    color: white;
+}
+.footer_img{
+    text-align: center;
+    padding-top: 10px;
+}
+.footer_mes{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.footer_mes :first-child{
+    text-align: center;
+}
+.HoYo{
+    padding-top: 50px;
+}
+.HoYo p{
+    text-align: center;
+}
